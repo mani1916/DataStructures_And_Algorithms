@@ -1,0 +1,14 @@
+a=[10,8,7,1,12,5]
+i=1
+while(i<len(a)):
+    n=i
+    while(n>=1):
+        if(a[n]<a[n-1]):
+            temp=a[n]
+            a[n]=a[n-1]
+            a[n-1]=temp
+        else:
+            break
+        n-=1
+    i+=1
+print(a)
